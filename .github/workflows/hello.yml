@@ -1,0 +1,22 @@
+# WORKFLOW
+name: Hello
+
+# On tells when the workflow should RUN
+on:
+  workflow_dispatch: 
+
+# Jobs tell what the workflow should do (One or more than one)
+jobs:
+
+# 1st JOB
+  say-hello:
+
+    # Create a SHORT-LIVING Container
+    runs-on: ubuntu-latest
+
+    # Container has steps
+    steps:
+      - name: Say hello to everyone!
+
+        # Run is equal to the command to be run
+        run: echo "Hello Dosto"
